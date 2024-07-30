@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+    background-color: darkblue;
+    color: #FFF;
+}
+
+nav[role="navigation"] p {
+    display: none;
+}
