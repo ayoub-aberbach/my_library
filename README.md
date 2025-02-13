@@ -23,6 +23,9 @@ Here're some of the project's best features:
 ```
 composer install
 ```
+```
+npm install
+```
 
 <p>2. Set Up the .env File</p>
 
@@ -46,3 +49,17 @@ DB_DATABASE=your_database_name
 DB_USERNAME=your_database_user
 DB_PASSWORD=your_database_password
 ```
+
+<p>5. To run the project:</p>
+
+* Open 2 CMDs:
+
+    + (1)
+    ```sh
+    php artisan migrate && php artisan serve
+    ```
+
+    + (2)
+    ```sh
+    npm run dev
+    ```
