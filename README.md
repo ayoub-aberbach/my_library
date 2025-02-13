@@ -1,47 +1,46 @@
-<h1 align="center" id="title">Library Management system</h1>
+# Library Management System
 
-<p id="description">Dashboard to manage a book-rental library.</p>
+A dashboard to manage a book-rental library.
 
-  
-  
-<h2>🧐 Features</h2>
+## Features:
 
-Here're some of the project's best features:
+- Authentication
+- Book management
+- Author management
+- Lended books management
+- Multi-language support (Arabic / English)
+- Filtering functionalities
+- Book availability checker
 
-*   Authentication
-*   Book management
-*   Author management
-*   Lended books management
-*   Two languages (Ar / En)
-*   Filtering functionalities
-*   Checking book availability.
+## Installation Steps:
 
-<h2>🛠️ Installation Steps:</h2>
+1. Install Dependencies:
 
-<p>1. Install Dependencies</p>
-
-```
+```sh
 composer install
 ```
-```
+
+```sh
 npm install
 ```
 
-<p>2. Set Up the .env File</p>
+2. Set Up the `.env` File:
 
-```
+```sh
 cp .env.example .env
 ```
 
-<p>3. Generate an Application Key</p>
+3. Generate an Application Key:
 
-```
+```sh
 php artisan key:generate
 ```
 
-<p>4. Configure the Database</p>
+4. Configure the Database:
 
-```
+Update the `.env` file with your database credentials:
+
+```ini
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -50,16 +49,20 @@ DB_USERNAME=your_database_user
 DB_PASSWORD=your_database_password
 ```
 
-<p>5. To run the project:</p>
+5. Run the Project:
 
-* Open 2 CMDs:
+Open **two terminal windows** and execute the following commands:
 
-    + (1)
-    ```sh
-    php artisan migrate && php artisan serve
-    ```
+- **First Terminal (Migrate database & start the server):**
 
-    + (2)
-    ```sh
-    npm run dev
-    ```
+```sh
+php artisan migrate && php artisan serve
+```
+
+- **Second Terminal (Compile frontend assets):**
+
+```sh
+npm run dev
+```
+
+Now, your **Library Management System** is up and running! 🚀📚
